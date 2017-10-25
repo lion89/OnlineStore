@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-23 20:12:27 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.heim.model.bean.TradeRecord" table="TRADERECORD">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="total" type="int">
+            <column name="TOTAL" />
+        </property>
+        <property name="tradeTime" type="java.util.Date">
+            <column name="TRADETIME" />
+        </property>
+    </class>
+</hibernate-mapping>
